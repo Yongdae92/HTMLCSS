@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>문서의 흐름</title>
+    <style>
+        .container{
+            height: 400px;
+            border: 1px solid black;
+        }
+
+        #first{
+            float: right;
+        }
+
+        #second{
+            float: left;
+        }
+
+        p{
+            clear: both;  /* right, left, both가 존재 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <img id="first"
+        src="/4회차/iamages/messi.jpeg" width="160">
+    <img id="second"
+        src="/4회차/iamages/messi.jpeg" width="160">
+    <p>
+        메시는 갓이다. 그를 범접할 수 있는 축구선수는 존재하지 않는다.
+    </p>
+    </div>
+</body>
+</html>
