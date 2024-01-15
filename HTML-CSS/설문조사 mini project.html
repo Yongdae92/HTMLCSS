@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>축구설문양식</title>
+</head>
+<body>
+    <header>
+        <h1>축구 관련 설문 조사</h1>
+        <br>
+        <p>모든 항목에 빠짐없이 체크해주세요</p>
+    </header>
+    <hr>
+    <main>
+        <form action="oz.none" method="post">
+            <fieldset>
+                <legend>인적사항</legend>
+                <label for="name">이름</label>
+                <input type="text" id="name" placeholder="이름을 입력하세요" name="name">
+                <label for="email">이메일</label>
+                <input type="email" id="email" placeholder="이메일을 입력하세요" name="email"><br>
+                <label for="id">아이디</label>
+                <input type="text" id="id" placeholder="아이디를 입력하세요", name="id"><br>
+                <lebel for="password">비밀번호</lebel>
+                <input type="password" placeholder="비밀번호를 입력하세요", name="password">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>설문</legend>
+                <ul>
+                    <li><strong>연령대가 어떻게 되십니까?</strong></li><br>            
+                    <label for="teen">10대</label>
+                    <input type="radio" id="teen" name="age">
+                    <label for="twenty">20대</label>
+                    <input type="radio" id="twenty" name="age">
+                    <label for="thirty">30대</label>
+                    <input type="radio" id="thirty" name="age">
+                    <label for="fourty">40대</label>
+                    <input type="radio" id="fourty" name="age">
+                    <label for="fifty">50대</label>
+                    <input type="radio" id="fifty" name="age">
+                    <label for="other">other</label>
+                    <input type="radio" id="other" name="age">
+                    <br>
+                    <br>
+                    <br>
+                    <li><strong>신어본 적 있는 축구화 브랜드가 어떻게 되십니까?</strong></li><br>
+                    <label for="adidas">아디다스</label>
+                    <input type="checkbox" id="adidas" name="shoes">
+                    <label for="nike">나이키</label>
+                    <input type="checkbox" id="nike" name="shoes">
+                    <label for="puma">푸마</label>
+                    <input type="checkbox" id="puma" name="shoes">
+                    <label for="mizno">미즈노</label>
+                    <input type="checkbox" id="mizno" name="shoes">
+                    <label for="asics">아식스</label>
+                    <input type="checkbox" id="asics" name="shoes">
+                 </ul>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>포지션 별 최고의 선수</legend>
+                <p>목록 내의 베스트 플레이어 선택해주세요</p>
+                <label for="forword">공격수</label>
+                <select>
+                    <option value="mbape">음바페</option>
+                    <option value="kane">케인</option>
+                    <option value="ronaldo">호날두</option>
+                    <option value="messi">메시</option>
+                    <option value="holland">홀란드</option>
+                </select>
+
+                <label for="defender">수비수</label>
+                <select>
+                    <option value="kim">김민재</option>
+                    <option value="van">반다이크</option>
+                    <option value="ruben">후벵 디아즈</option>
+                    <option value="stones">존 스톤스</option>            
+                </select>
+
+                <label for="goalkeeper">골키퍼</label>
+                <select>
+                    <option value="ederson">에데르송</option>
+                    <option value="donnarumma">돈나룸마</option>
+                    <option value="courtois">쿠르투아</option>
+                    <option value="nuer">마누엘 노이어</option>
+                    <option value="vicario">비카리오</option>
+                </select>
+                <br>
+                <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>프리미어리그에서 가장 좋아하는 팀</legend>
+                <img src="./images/리버풀.png" width="80" for="liverpool">
+                <input type="radio" id="liverpool" name="liverpool">
+                <img src="./images/맨시티.png" width="80" for="mancity">
+                <input type="radio" id="mancity" name="mancity">
+                <img src="./images/맨유.png" width="80" for="manU">
+                <input type="radio" id="manU" name="manU">
+                <img src="./images/아스날.png" width="80" for="arsnal">
+                <input type="radio" id="arsnal" name="arsnal">
+                <img src="./images/첼시.png" width="80" for="chealse">
+                <input type="radio" id="chealse" name="chealse">
+                <img src="./images/토트넘.png" width="80" for="tottenham">
+                <input type="radio" id="tottenham" name="tottenham">
+                <br>
+                <br>
+            </fieldset>
+                <br>           
+                <legend>이번시즌 예상 우승팀과 그 이유를 남겨주세요</legend>
+                <textarea cols="80" rows="5" name="comment"></textarea>
+                <input type="submit">                
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p>설문에 참여해주셔서 감사합니다.</p>
+    </footer>
+    
+</body>
+</html>

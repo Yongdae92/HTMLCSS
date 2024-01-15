@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <title>박스로 간단하게 꾸미기</title>         
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+
+         <style>
+            *{
+                font-family: 'Dongle', sans-serif;
+            }
+            
+            
+            body{
+
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                background-image: linear-gradient(to top right, rgb(22, 143, 188), rgb(193, 0, 39));
+            }           
+
+            p{
+                /* 보더 속성 */
+                border-width: 3px;
+                border-style: solid;
+                border-color: rgb(110, 195, 225);
+                border-radius: 5px;
+
+                background-color:rgb(216, 216, 212);
+                background-position: center;
+                
+
+                /* 글자 속성 */
+                font-size: 25px;
+                line-height: 1.7;
+                text-align: center;             
+                color: rgb(77, 133, 154);                
+            }
+         </style>
+    </head>
+    <body>
+        <p>Hello, OZ!</p>
+    </body>
+</html>
