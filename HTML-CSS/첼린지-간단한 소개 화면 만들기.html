@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>간단한 소개 화면</title>
+    <style>
+        html{
+            background-color: rgb(255, 237, 171);
+        }
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+            margin:5px;
+        }
+        
+        .main{
+            display: inline-block;
+            background-color: greenyellow;
+            width: 200px;
+            height: 210px;
+            padding: 0; 
+            border-radius: 25px 0px 0px 25px;
+            text-align: center;
+        }
+
+        .introduce{
+            display: inline-block;
+            background-color: rgb(241, 243, 239);
+            height: 210px;
+            width: 100%;
+            padding-left: 10px; 
+            border-radius: 0px 25px 25px 0px;
+            text-align: left;
+            font-size: 16px;            
+        }  
+
+        #oz{
+            font-size: 20 px;
+            line-height: 17px;
+        }
+
+        #introduce{
+            font-size: 16px;
+            color: rgb(93, 49, 183);
+            line-height: 10px;
+        }
+
+        #top{
+            font-size: 24px;
+            letter-spacing: 5px;
+        }
+
+        #middle{
+            font-size:12px;
+            letter-spacing: 5px;
+            line-height: 30px;
+
+        }
+
+        #bottom{
+            font-size:16px;
+            color: rgb(93, 49, 183);
+            line-height: 12px;
+        }
+
+
+
+        
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="main">
+        <p id="oz"><strong>OZ CODING SCHOOL</strong></p>
+        <P id="student">수강생 권용대</P>
+        <p id="introduce">웹 개발 초격차 캠프</p>
+        <p id="introduce">Enjoy Coding</p>
+        <p id="introduce">Enjoy Learning</p>
+        <p id="introduce">Enjoy Tiping</p>
+    </div>
+    <div class="introduce">
+        <p id="top"><strong>즐거운 초격차 교실!</strong></p>
+        <p id="middle">Welcome to the OZ!</p>
+        <p id="bottom">python</p>
+        <p id="bottom">django</p>
+        <p id="bottom">flask</p>
+    </div>
+</div>
+</body>
+</html>
