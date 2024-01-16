@@ -1,0 +1,40 @@
+.chat-screen{
+    overflow: scroll;
+}
+
+.oz{
+    padding: 0;
+    list-style-type: none;
+}
+
+.oz > .text{
+    background-color: #34d27b;
+    width: 280px;
+    height: 50px;
+    margin-bottom: 10px; margin: 0 0 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    line-height: 30px;
+    position:relative;
+    left:20px;
+}
+
+.oz > .text::after{
+    content: "";
+    border-right: 16px solid #34d27b;
+    border-bottom: 16px solid transparent;
+
+    position: absolute;
+    top: 10px;
+    left: -10px;
+}
+
+.oz > .text:hover{
+    background-color: #1c9352;
+    transition: background-color 300ms 200ms ease-in;
+}
+
+.oz > .text:hover::after{
+    border-right: 16px solid #1c9352;
+    transition: border-right 300ms 200ms ease-in;
+}

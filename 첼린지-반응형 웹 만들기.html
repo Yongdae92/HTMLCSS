@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어 쿼리</title>
+    <style>    
+    body{
+        height: 100vh;
+        margin: 0;
+        padding:0;
+        border: 0;
+        background-color:  teal;
+    }
+
+    div.text{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        color: white;
+        letter-spacing: 5px;
+        font-size: 24px;
+    }
+
+    @media screen and (min-width: 1600px){
+        div.text{
+            background-color: orange;
+        }
+    }
+    @media screen and (min-width: 1024px) and (max-width:1600px){
+        div.text{
+            background-color: pink;
+        }
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        div.text{
+            background-color: aquamarine;
+        }
+    }
+
+    @media screen and (max-width: 758px){
+        div.text{
+            background-color: teal;
+        }
+    }
+    </style>
+</head>
+<body>
+<div class="text">
+        <p>여러 화면크기로 구경해봐요!</p>
+    </div>
+</div>
+
+</body>
+</html>
