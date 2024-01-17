@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플렉스박스 레이아웃</title>
+    <style>    
+    *{
+        box-sizing: border-box;
+    }
+
+    body{
+        margin: 0;
+    }
+
+    ul{
+        display: flex;
+        padding: 0;
+        list-style-type: none;
+        height: 200px;
+
+        justify-content: stretch;      /* flex-start, center, flex-end space-between, space-around */
+        /*                                      space-evenly
+        flex-direction: row;     /* row 가로 , column 세로
+        flex-wrap: wrap;
+
+        flex-flow: row wrap;
+        */
+
+        align-items: center; /* stretch, flex-start, flex-end, center */
+    }
+
+    /* li:nth-child(3){
+        align-self:flex-start;
+    } */
+
+    li{
+        background-color: tomato;
+    }
+    li:nth-child(2n){
+        background-color: teal;
+    }
+    li:nth-child(2n){
+       flex-grow: 1;       /* 0 또는 숫자 */
+    }
+    li:nth-child(2n-1){
+       /* flex-shrink: 2;  flex-basis: 100px;
+       flex-grow: 1;  */
+       flex: 1 1 120px;    /* grow > shrikn > basis */
+    }
+    </style>
+</head>
+<body>
+    <h2>유노코딩이 집 앞 강가에서 목격한 동물들</h2>
+    <ul>
+        <!--
+            플렉스 아이템은 플렉스 컨테이너로서의 역할을 하지 않는다!
+        -->
+        <li>물오리</li>
+        <li>물까치</li>
+        <li>고라니</li>
+        <li>누룩뱀</li>
+        <li>너구리</li>
+    </ul>
+</body>
+</html>
